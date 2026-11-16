@@ -29,10 +29,12 @@ The reference online version of these guidelines is
 
 | Name | Hex | Usage |
 |------|-----|-------|
-| Bleu principal | `#0e2d5a` | Titles, main elements, footer |
+| Bleu principal | `#0e2d5a` | Logo, print, titles |
 | Rouge accent | `#c83737` | CTAs, badges, attention elements |
-| Bleu clair | `#1a4a8a` | Hover, links, secondary accents |
+| Bleu clair | `#1a4a8a` | Hover, links, secondary accents (print) |
 | Bleu pâle | `#e8eef5` | Section backgrounds, cards |
+| Bleu web | `#1a4580` | Main UI blue on the website (titles, buttons, footer) |
+| Bleu web clair | `#2660a8` | Hover and links on the website |
 | Rouge clair | `#e85555` | CTA hover |
 | Rouge pâle | `#fdf2f2` | Alerts, notifications |
 | Gris texte | `#374151` | Body text |
@@ -40,6 +42,10 @@ The reference online version of these guidelines is
 | Fond de page | `#fafbfc` | Page background |
 | Surface | `#ffffff` | Cards, containers |
 | Bordure | `#e5e7eb` | Borders, separators |
+
+`#0e2d5a` is the logo blue and the reference for print. The website uses
+the brighter "web" blues (`#1a4580`, `#2660a8`), which read better on screen
+next to the logo; do not use them in print material.
 
 ## Typography
 
@@ -89,3 +95,18 @@ make        # regenerates logo, palette and kakemono
 The logo geometry (`tools/brand.py`) is taken verbatim from the Inkscape
 master in `logo/source/`; the wordmark is re-typeset in Ubuntu Medium with
 the exact size, position and stroke of the master, then outlined.
+
+## Publishing to the website
+
+The <https://toulouse-devops.org/brand/> page and its downloads are fed from
+this repository. With the website checked out next to this one:
+
+```sh
+make                 # if sources changed
+make sync-site       # or: make sync-site SITE=/path/to/toulousedevops.org
+```
+
+This replaces `public/static/brand/` (logo, symbol, PNGs, palette files,
+kakemono PDF and preview) and `src/data/brand-palette.json` (colours shown on
+the page) in the website repository. Review and commit there; the website CI
+does not read this repository.

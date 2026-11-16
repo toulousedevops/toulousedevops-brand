@@ -33,7 +33,9 @@ the two words.
 
 The two main colours come from the logo: Bleu principal `#0e2d5a` and
 Rouge accent `#c83737`. Use the red sparingly, for calls to action and
-highlights. The full palette is in [README.md](README.md#colours) and in
+highlights. On the website, the brighter "Bleu web" `#1a4580` replaces the
+logo blue for interface elements; keep `#0e2d5a` for print. The full
+palette is in [README.md](README.md#colours) and in
 machine-readable form in [`colors/`](colors/).
 
 ## Typography

@@ -6,6 +6,8 @@ Columns: 4
 200  55  55	Rouge accent
  26  74 138	Bleu clair
 232 238 245	Bleu pâle
+ 26  69 128	Bleu web
+ 38  96 168	Bleu web clair
 232  85  85	Rouge clair
 253 242 242	Rouge pâle
  55  65  81	Gris texte

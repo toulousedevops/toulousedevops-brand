@@ -2,7 +2,9 @@
   "primary": {
     "name": "Bleu principal",
     "hex": "#0e2d5a",
-    "usage": "Titles, main elements, footer",
+    "group": "main",
+    "usage": "Logo, print, titles",
+    "usage_fr": "Logo, impression, titres",
     "rgb": [
       14,
       45,
@@ -12,7 +14,9 @@
   "accent": {
     "name": "Rouge accent",
     "hex": "#c83737",
+    "group": "main",
     "usage": "CTAs, badges, attention elements",
+    "usage_fr": "CTA, badges, éléments d’attention",
     "rgb": [
       200,
       55,
@@ -22,7 +26,9 @@
   "primary-light": {
     "name": "Bleu clair",
     "hex": "#1a4a8a",
-    "usage": "Hover, links, secondary accents",
+    "group": "blue",
+    "usage": "Hover, links, secondary accents (print)",
+    "usage_fr": "Survol, liens, accents secondaires (print)",
     "rgb": [
       26,
       74,
@@ -32,17 +38,45 @@
   "primary-pale": {
     "name": "Bleu pâle",
     "hex": "#e8eef5",
+    "group": "blue",
     "usage": "Section backgrounds, cards",
+    "usage_fr": "Fonds de sections, cartes",
     "rgb": [
       232,
       238,
       245
     ]
   },
+  "web-primary": {
+    "name": "Bleu web",
+    "hex": "#1a4580",
+    "group": "web",
+    "usage": "Main UI blue on the website (titles, buttons, footer)",
+    "usage_fr": "Bleu principal de l’interface web (titres, boutons, footer)",
+    "rgb": [
+      26,
+      69,
+      128
+    ]
+  },
+  "web-primary-light": {
+    "name": "Bleu web clair",
+    "hex": "#2660a8",
+    "group": "web",
+    "usage": "Hover and links on the website",
+    "usage_fr": "Survol et liens sur le site",
+    "rgb": [
+      38,
+      96,
+      168
+    ]
+  },
   "accent-light": {
     "name": "Rouge clair",
     "hex": "#e85555",
+    "group": "red",
     "usage": "CTA hover",
+    "usage_fr": "Survol des CTA",
     "rgb": [
       232,
       85,
@@ -52,7 +86,9 @@
   "accent-pale": {
     "name": "Rouge pâle",
     "hex": "#fdf2f2",
+    "group": "red",
     "usage": "Alerts, notifications",
+    "usage_fr": "Alertes, notifications",
     "rgb": [
       253,
       242,
@@ -62,7 +98,9 @@
   "text": {
     "name": "Gris texte",
     "hex": "#374151",
+    "group": "neutral",
     "usage": "Body text",
+    "usage_fr": "Corps de texte",
     "rgb": [
       55,
       65,
@@ -72,7 +110,9 @@
   "text-light": {
     "name": "Gris clair",
     "hex": "#6b7280",
+    "group": "neutral",
     "usage": "Secondary text, captions",
+    "usage_fr": "Texte secondaire, légendes",
     "rgb": [
       107,
       114,
@@ -82,7 +122,9 @@
   "background": {
     "name": "Fond de page",
     "hex": "#fafbfc",
+    "group": "neutral",
     "usage": "Page background",
+    "usage_fr": "Fond général",
     "rgb": [
       250,
       251,
@@ -92,7 +134,9 @@
   "surface": {
     "name": "Surface",
     "hex": "#ffffff",
+    "group": "neutral",
     "usage": "Cards, containers",
+    "usage_fr": "Cartes, conteneurs",
     "rgb": [
       255,
       255,
@@ -102,7 +146,9 @@
   "border": {
     "name": "Bordure",
     "hex": "#e5e7eb",
+    "group": "neutral",
     "usage": "Borders, separators",
+    "usage_fr": "Bordures, séparateurs",
     "rgb": [
       229,
       231,

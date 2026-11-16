@@ -9,7 +9,14 @@ LOGO      := logo/toulouse-devops-logo.svg
 MARK      := logo/toulouse-devops-mark.svg
 KAKEMONO  := kakemono/toulouse-devops-kakemono-85x200
 
-.PHONY: all logo palette kakemono venv clean
+# Checkout of the toulouse-devops.org website (Astro). `make sync-site` copies
+# the generated assets there; the site repo vendors them so its CI does not
+# need this repository.
+SITE       ?= ../toulousedevops.org
+SITE_FILES := $(SITE)/public/static/brand
+SITE_DATA  := $(SITE)/src/data/brand-palette.json
+
+.PHONY: all logo palette kakemono venv clean sync-site
 
 all: logo palette kakemono
 
@@ -38,3 +45,15 @@ kakemono: logo
 
 clean:
 	rm -f logo/*.pdf logo/png/*.png kakemono/*.pdf kakemono/*.png
+
+# Copy the published assets into the website. Run `make` first if sources changed.
+sync-site:
+	@test -d $(SITE)/src/pages || { echo "Website checkout not found at $(SITE) (set SITE=...)"; exit 1; }
+	rm -rf $(SITE_FILES)
+	mkdir -p $(SITE_FILES)/png $(SITE_FILES)/colors $(SITE_FILES)/kakemono
+	cp logo/toulouse-devops-logo.svg logo/toulouse-devops-logo.pdf $(MARK) $(SITE_FILES)/
+	cp logo/png/*.png $(SITE_FILES)/png/
+	cp colors/palette.json colors/palette.css colors/palette.scss colors/toulouse-devops.gpl $(SITE_FILES)/colors/
+	cp $(KAKEMONO).pdf kakemono/toulouse-devops-kakemono-preview.png $(SITE_FILES)/kakemono/
+	cp colors/palette.json $(SITE_DATA)
+	@echo "Synced brand assets into $(SITE). Review and commit there."

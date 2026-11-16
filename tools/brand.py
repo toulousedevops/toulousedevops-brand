@@ -5,17 +5,35 @@ The symbol geometry is taken verbatim from the Inkscape source file
 """
 
 PALETTE = {
-    "primary": {"name": "Bleu principal", "hex": "#0e2d5a", "usage": "Titles, main elements, footer"},
-    "accent": {"name": "Rouge accent", "hex": "#c83737", "usage": "CTAs, badges, attention elements"},
-    "primary-light": {"name": "Bleu clair", "hex": "#1a4a8a", "usage": "Hover, links, secondary accents"},
-    "primary-pale": {"name": "Bleu pâle", "hex": "#e8eef5", "usage": "Section backgrounds, cards"},
-    "accent-light": {"name": "Rouge clair", "hex": "#e85555", "usage": "CTA hover"},
-    "accent-pale": {"name": "Rouge pâle", "hex": "#fdf2f2", "usage": "Alerts, notifications"},
-    "text": {"name": "Gris texte", "hex": "#374151", "usage": "Body text"},
-    "text-light": {"name": "Gris clair", "hex": "#6b7280", "usage": "Secondary text, captions"},
-    "background": {"name": "Fond de page", "hex": "#fafbfc", "usage": "Page background"},
-    "surface": {"name": "Surface", "hex": "#ffffff", "usage": "Cards, containers"},
-    "border": {"name": "Bordure", "hex": "#e5e7eb", "usage": "Borders, separators"},
+    # "group" drives how the palette is presented (e.g. on toulouse-devops.org/brand/);
+    # "usage_fr" is the French label shown on the website.
+    "primary": {"name": "Bleu principal", "hex": "#0e2d5a", "group": "main",
+                "usage": "Logo, print, titles", "usage_fr": "Logo, impression, titres"},
+    "accent": {"name": "Rouge accent", "hex": "#c83737", "group": "main",
+               "usage": "CTAs, badges, attention elements", "usage_fr": "CTA, badges, éléments d’attention"},
+    "primary-light": {"name": "Bleu clair", "hex": "#1a4a8a", "group": "blue",
+                      "usage": "Hover, links, secondary accents (print)", "usage_fr": "Survol, liens, accents secondaires (print)"},
+    "primary-pale": {"name": "Bleu pâle", "hex": "#e8eef5", "group": "blue",
+                     "usage": "Section backgrounds, cards", "usage_fr": "Fonds de sections, cartes"},
+    "web-primary": {"name": "Bleu web", "hex": "#1a4580", "group": "web",
+                    "usage": "Main UI blue on the website (titles, buttons, footer)",
+                    "usage_fr": "Bleu principal de l’interface web (titres, boutons, footer)"},
+    "web-primary-light": {"name": "Bleu web clair", "hex": "#2660a8", "group": "web",
+                          "usage": "Hover and links on the website", "usage_fr": "Survol et liens sur le site"},
+    "accent-light": {"name": "Rouge clair", "hex": "#e85555", "group": "red",
+                     "usage": "CTA hover", "usage_fr": "Survol des CTA"},
+    "accent-pale": {"name": "Rouge pâle", "hex": "#fdf2f2", "group": "red",
+                    "usage": "Alerts, notifications", "usage_fr": "Alertes, notifications"},
+    "text": {"name": "Gris texte", "hex": "#374151", "group": "neutral",
+             "usage": "Body text", "usage_fr": "Corps de texte"},
+    "text-light": {"name": "Gris clair", "hex": "#6b7280", "group": "neutral",
+                   "usage": "Secondary text, captions", "usage_fr": "Texte secondaire, légendes"},
+    "background": {"name": "Fond de page", "hex": "#fafbfc", "group": "neutral",
+                   "usage": "Page background", "usage_fr": "Fond général"},
+    "surface": {"name": "Surface", "hex": "#ffffff", "group": "neutral",
+                "usage": "Cards, containers", "usage_fr": "Cartes, conteneurs"},
+    "border": {"name": "Bordure", "hex": "#e5e7eb", "group": "neutral",
+               "usage": "Borders, separators", "usage_fr": "Bordures, séparateurs"},
 }
 
 C = {k: v["hex"] for k, v in PALETTE.items()}

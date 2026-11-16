@@ -1,9 +1,11 @@
 /* Toulouse DevOps brand palette */
 :root {
-  --tdo-primary: #0e2d5a; /* Bleu principal – Titles, main elements, footer */
+  --tdo-primary: #0e2d5a; /* Bleu principal – Logo, print, titles */
   --tdo-accent: #c83737; /* Rouge accent – CTAs, badges, attention elements */
-  --tdo-primary-light: #1a4a8a; /* Bleu clair – Hover, links, secondary accents */
+  --tdo-primary-light: #1a4a8a; /* Bleu clair – Hover, links, secondary accents (print) */
   --tdo-primary-pale: #e8eef5; /* Bleu pâle – Section backgrounds, cards */
+  --tdo-web-primary: #1a4580; /* Bleu web – Main UI blue on the website (titles, buttons, footer) */
+  --tdo-web-primary-light: #2660a8; /* Bleu web clair – Hover and links on the website */
   --tdo-accent-light: #e85555; /* Rouge clair – CTA hover */
   --tdo-accent-pale: #fdf2f2; /* Rouge pâle – Alerts, notifications */
   --tdo-text: #374151; /* Gris texte – Body text */
