@@ -48,3 +48,12 @@ machine-readable form in [`colors/`](colors/).
 
 Professional but relaxed: we talk tech seriously, around a drink and a
 pizza. Informal French ("tu") is used in community communication.
+
+## Using the name and logo
+
+The assets are licensed under CC BY 4.0, which does not cover trademark
+rights. You are welcome to use the name and logo to refer to the community,
+announce or promote its events, or show that you host or sponsor one.
+Do not use them in a way that suggests Toulouse DevOps endorses a product,
+company or event it is not involved with, and do not build a derived logo
+for another group or product from them.

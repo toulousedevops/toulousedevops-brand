@@ -110,3 +110,21 @@ This replaces `public/static/brand/` (logo, symbol, PNGs, palette files,
 kakemono PDF and preview) and `src/data/brand-palette.json` (colours shown on
 the page) in the website repository. Review and commit there; the website CI
 does not read this repository.
+
+## License
+
+- **Brand assets** (logo, symbol, palette, kakemono, archive, and the
+  guidelines text) are licensed under
+  [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE).
+  Credit them as "Toulouse DevOps".
+- **Code** (`tools/` and the `Makefile`) is licensed under the
+  [Apache License 2.0](tools/LICENSE).
+
+The fonts (Ubuntu, Inter, JetBrains Mono) are not part of this repository
+and keep their own licenses.
+
+The CC BY 4.0 license grants no trademark rights (section 2(b)(2)). The
+name and logo identify the Toulouse DevOps community: use them to talk about
+or promote the community and its events, but not in a way that suggests an
+endorsement, partnership or affiliation that does not exist. See
+[GUIDELINES.md](GUIDELINES.md#using-the-name-and-logo).
