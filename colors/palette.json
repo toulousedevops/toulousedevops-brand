@@ -1,0 +1,112 @@
+{
+  "primary": {
+    "name": "Bleu principal",
+    "hex": "#0e2d5a",
+    "usage": "Titles, main elements, footer",
+    "rgb": [
+      14,
+      45,
+      90
+    ]
+  },
+  "accent": {
+    "name": "Rouge accent",
+    "hex": "#c83737",
+    "usage": "CTAs, badges, attention elements",
+    "rgb": [
+      200,
+      55,
+      55
+    ]
+  },
+  "primary-light": {
+    "name": "Bleu clair",
+    "hex": "#1a4a8a",
+    "usage": "Hover, links, secondary accents",
+    "rgb": [
+      26,
+      74,
+      138
+    ]
+  },
+  "primary-pale": {
+    "name": "Bleu pâle",
+    "hex": "#e8eef5",
+    "usage": "Section backgrounds, cards",
+    "rgb": [
+      232,
+      238,
+      245
+    ]
+  },
+  "accent-light": {
+    "name": "Rouge clair",
+    "hex": "#e85555",
+    "usage": "CTA hover",
+    "rgb": [
+      232,
+      85,
+      85
+    ]
+  },
+  "accent-pale": {
+    "name": "Rouge pâle",
+    "hex": "#fdf2f2",
+    "usage": "Alerts, notifications",
+    "rgb": [
+      253,
+      242,
+      242
+    ]
+  },
+  "text": {
+    "name": "Gris texte",
+    "hex": "#374151",
+    "usage": "Body text",
+    "rgb": [
+      55,
+      65,
+      81
+    ]
+  },
+  "text-light": {
+    "name": "Gris clair",
+    "hex": "#6b7280",
+    "usage": "Secondary text, captions",
+    "rgb": [
+      107,
+      114,
+      128
+    ]
+  },
+  "background": {
+    "name": "Fond de page",
+    "hex": "#fafbfc",
+    "usage": "Page background",
+    "rgb": [
+      250,
+      251,
+      252
+    ]
+  },
+  "surface": {
+    "name": "Surface",
+    "hex": "#ffffff",
+    "usage": "Cards, containers",
+    "rgb": [
+      255,
+      255,
+      255
+    ]
+  },
+  "border": {
+    "name": "Bordure",
+    "hex": "#e5e7eb",
+    "usage": "Borders, separators",
+    "rgb": [
+      229,
+      231,
+      235
+    ]
+  }
+}
